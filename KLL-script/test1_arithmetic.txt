@@ -1,0 +1,20 @@
+int result;
+int a;
+int b;
+int c;
+
+cin(a);  
+cin(b); 
+cin(c);  
+
+result = a + b * c; 
+cout(result);
+
+result = (a + b) * c;
+cout(result);
+
+result = a / c - b;  
+cout(result);
+
+result = a * (b - c + 1);
+cout(result);

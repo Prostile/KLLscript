@@ -1,0 +1,49 @@
+arr data[5]; 
+int i;
+int size;
+int temp;
+int j;
+int inputdata;
+
+size = 5; 
+
+i = 0;
+while (i < size)
+begin
+  cout(i);
+  cin(inputdata); 
+  data[i] = inputdata;
+  i = i + 1;
+end;
+
+i = 0;
+cout(999); 
+while (i < size)
+begin
+  cout(data[i]);
+  i = i + 1;
+end;
+
+i = 0;
+while (i < size - 1) begin
+  j = 0;
+  while (j < size - i - 1) begin
+    if (data[j] > data[j+1]) begin 
+        temp = data[j];
+        data[j] = data[j+1];
+        data[j+1] = temp;
+    end;
+    j = j + 1;
+  end;
+  i = i + 1;
+end;
+
+
+
+cout(888); 
+i = 0;
+while (i < size)
+begin
+  cout(data[i]);
+  i = i + 1;
+end;

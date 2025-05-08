@@ -1,0 +1,7 @@
+int n;
+int zero;
+int result;
+cin(n);
+zero = n - 10; 
+result = 5 / zero;
+cout(result);

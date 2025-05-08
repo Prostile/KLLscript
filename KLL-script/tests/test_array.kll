@@ -1,0 +1,22 @@
+arr data[5]; // Статический массив
+int i;
+int temp;
+
+// Ввод элементов
+i = 0;
+while (i < 5) begin
+    cin(temp);
+    data[i] = temp;
+    i = i + 1;
+end;
+
+// Вывод элементов в обратном порядке
+i = 4;
+while (i > -1) begin // Используем > -1 вместо >= 0, т.к. >= нет
+    cout(data[i]);
+    i = i - 1;
+end;
+
+// Пример изменения элемента
+data[1] = data[0] + data[4];
+cout(data[1]);

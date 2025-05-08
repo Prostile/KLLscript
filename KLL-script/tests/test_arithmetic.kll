@@ -1,0 +1,20 @@
+int a;
+int b;
+int c;
+int result;
+
+cin(a); // ¬вод: 10
+cin(b); // ¬вод: 5
+cin(c); // ¬вод: 3
+
+result = a + b * c; // 10 + 5 * 3 = 25
+cout(result);
+
+result = (a + b) * c; // (10 + 5) * 3 = 45
+cout(result);
+
+result = a / b - c; // 10 / 5 - 3 = 2 - 3 = -1 (целочисленное деление)
+cout(result);
+
+result = a * (b - c + 1); // 10 * (5 - 3 + 1) = 10 * 3 = 30
+cout(result);

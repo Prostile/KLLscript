@@ -1,0 +1,7 @@
+int num;
+int den;
+int res;
+num = 10;
+cin(den); 
+res = num / den; 
+cout(res);

@@ -1,0 +1,25 @@
+int x;
+int y;
+
+cin(x); // Ввод: 7
+cin(y); // Ввод: 12
+
+if (x > y) begin
+    cout(x); // Не должно выполниться
+end else begin
+    cout(y); // Должно вывести 12
+end;
+
+if ( (x * 2) > y) begin // 14 > 12
+    cout(1); // Должно вывести 1
+end; // Нет else
+
+if (x ! y) begin // 7 != 12
+     cout(99); // Должно вывести 99
+end else begin
+     cout(0); // Не должно выполниться
+end;
+
+if (y ~ 12) begin // 12 == 12
+     cout(12); // Должно вывести 12
+end;

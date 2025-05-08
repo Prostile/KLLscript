@@ -1,0 +1,5 @@
+arr myArr[3];
+int index;
+index = 5;
+myArr[index] = 100; 
+cout(myArr[0]); 

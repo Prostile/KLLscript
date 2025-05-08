@@ -1,0 +1,15 @@
+int counter;
+int limit;
+int sum;
+
+cin(limit);
+counter = 0;
+sum = 0;
+
+while ( counter < limit ) begin
+    counter = counter + 1;
+    sum = sum + counter;
+    cout(counter);
+end;
+
+cout(sum);

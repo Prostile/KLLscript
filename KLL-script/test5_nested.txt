@@ -1,0 +1,20 @@
+int i;
+int j;
+int n;
+
+cin(n);
+
+i = 0;
+while(i < n) begin
+  j = 0;
+  while(j < n) begin
+    if (i ~ j)
+      cout(1)
+    else
+      cout(0);
+    ; 
+    j = j + 1;
+  end;
+  cout(9);
+  i = i + 1;
+end;

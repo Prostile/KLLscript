@@ -1,0 +1,6 @@
+int x;
+arr a[5];
+x = a; 
+a = x; 
+cout(x);
+cout(a[0]); 
