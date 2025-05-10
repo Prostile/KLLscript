@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
 
     // 3. Инициализация компонентов компилятора
     ErrorHandler errorHandler; // Создаем обработчик ошибок
-    SymbolTable symbolTable;   // Создаем таблицу символов
+    SymbolTable symbolTable(errorHandler);   // Создаем таблицу символов
     Lexer lexer(sourceCode, symbolTable, errorHandler); // Создаем лексер
     Parser parser(lexer, symbolTable, errorHandler);     // Создаем парсер
 
@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
     std::cout << "Compilation successful. RPN code generated." << std::endl;
 
     // (Опционально) Вывод сгенерированного ОПС для отладки
-    // parser.printRPN(); // Этот метод нужно будет реализовать в Parser
+    parser.printRPN(); // Этот метод нужно будет реализовать в Parser
 
     // 5. Фаза интерпретации
     std::cout << "\nStarting execution..." << std::endl;

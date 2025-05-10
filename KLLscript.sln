@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KLL-script-1.0", "KLL-script\KLL-script.vcxproj", "{086954D7-B5FD-4810-9EC7-068160BCA838}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KLL-script-1.1", "KLL-script-1.1\KLL-script-1.1.vcxproj", "{FF4D01A9-9A71-4493-8C22-C8BF8AFF3C1D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KLL-skript-1.2", "KLL-skript-1.2\KLL-skript-1.2.vcxproj", "{D53A8FE2-48B1-45FA-972F-2547338DA528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{FF4D01A9-9A71-4493-8C22-C8BF8AFF3C1D}.Release|x64.Build.0 = Release|x64
 		{FF4D01A9-9A71-4493-8C22-C8BF8AFF3C1D}.Release|x86.ActiveCfg = Release|Win32
 		{FF4D01A9-9A71-4493-8C22-C8BF8AFF3C1D}.Release|x86.Build.0 = Release|Win32
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Debug|x64.ActiveCfg = Debug|x64
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Debug|x64.Build.0 = Debug|x64
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Debug|x86.ActiveCfg = Debug|Win32
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Debug|x86.Build.0 = Debug|Win32
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Release|x64.ActiveCfg = Release|x64
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Release|x64.Build.0 = Release|x64
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Release|x86.ActiveCfg = Release|Win32
+		{D53A8FE2-48B1-45FA-972F-2547338DA528}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

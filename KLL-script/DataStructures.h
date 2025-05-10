@@ -17,7 +17,6 @@ struct Token {
     std::string text = "";
     int intValue = 0;
     // double floatValue = 0.0;
-    // bool boolValue = false;
     int line = 0;
     int column = 0;
 
@@ -31,16 +30,14 @@ struct Token {
 };
 
 // --- Тип для хранения значения переменной или константы ---
-using SymbolValue = std::variant<int /*, double, bool*/>;
+using SymbolValue = std::variant<int /*, double*/>;
 
 // --- Запись в таблице символов ---
 enum class SymbolType {
     VARIABLE_INT,
     // VARIABLE_FLOAT,
-    // VARIABLE_BOOL,
     ARRAY_INT
-    // ARRAY_FLOAT,
-    // ARRAY_BOOL
+    // ARRAY_FLOAT
 };
 
 struct SymbolInfo {
@@ -102,18 +99,16 @@ struct StackValue {
     enum class Type {
         INT_VALUE,          // Непосредственно значение int
         // FLOAT_VALUE,
-        // BOOL_VALUE,
         SYMBOL_ADDRESS,     // Адрес переменной (индекс в таблице)
         ARRAY_ELEMENT_ADDRESS // Адрес элемента массива
     } type;
 
     // Делаем типы в variant уникальными
-    std::variant<int, /* double, bool, */ SymbolAddress, ArrayElementAddress> value;
+    std::variant<int, /* double */ SymbolAddress, ArrayElementAddress> value;
 
     // Конструкторы
     StackValue(int val) : type(Type::INT_VALUE), value(val) {}
     // StackValue(double val) : type(Type::FLOAT_VALUE), value(val) {}
-    // StackValue(bool val) : type(Type::BOOL_VALUE), value(val) {}
 
     // Конструктор для адреса переменной
     StackValue(int symIndex, Type t) : type(t) {
